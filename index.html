@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Manuel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#projects">Proyecto</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="home" class="welcome">
+        <div class="container">
+            <h2>Bienvenido a mi sitio web</h2>
+            <p>Soy Manuel, Desarrollador Web.</p>
+            <a href="#contact" class="cta-button">¡Contáctame!</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <img src="mi-foto.jpeg" alt="Tu Foto" class="profile-img">
+                <p>Tengo conocimientos para crear páginas web usando Html 5, Css 3 y Wordpress.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="projects">
+        <div class="container">
+            <h2>Mi Proyecto</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="proyecto.jpeg" alt="proyecto ">
+                    <h3>Proyecto </h3>
+                    <p>Diseñé una página web personal en WordPress, pincha el enlace <a
+                            href="http://www.manueldigital.net" target="_blank" >manueldigital</a><br>para visitar la página.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Sección de Contacto -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contact-form" action="enviar_formulario.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+            <!-- Div para mostrar el mensaje -->
+            <div id="thank-you-message" style="display: none; margin-top: 20px; font-size: 1.2em; color: green;"></div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Manuel Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="mailto:manueldigital22@gmail.com">Correo</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
