@@ -4,8 +4,8 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #e9ecef;
-    color: #343a40;
+    background-color: #f0f9f4; /* Fondo verde claro */
+    color: #2e4053; /* Texto en tono gris oscuro */
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 
 /* Header */
 header {
-    background: #212529;
+    background: #2e7d32; /* Verde oscuro */
     color: #f8f9fa;
     padding: 10px 0;
     position: sticky;
@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffc107;
+    color: #a5d6a7; /* Verde claro */
 }
 
 /* Welcome Section */
@@ -100,8 +100,8 @@ nav ul li a:hover {
 .cta-button {
     display: inline-block;
     padding: 18px 35px;
-    background-color: #ffc107;
-    color: #212529;
+    background-color: #81c784; /* Verde mediano */
+    color: #fff;
     text-decoration: none;
     font-size: 1.3em;
     border-radius: 50px;
@@ -112,7 +112,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #e0a800;
+    background-color: #66bb6a; /* Verde más oscuro */
     transform: translateY(-3px);
 }
 
@@ -127,7 +127,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
-    color: #212529;
+    color: #2e7d32;
 }
 
 .about-content {
@@ -155,7 +155,7 @@ nav ul li a:hover {
 
 /* Projects Section */
 #projects {
-    background-color: #f8f9fa;
+    background-color: #f0f9f4;
     padding: 60px 20px;
 }
 
@@ -164,7 +164,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
-    color: #212529;
+    color: #2e7d32;
 }
 
 .project-grid {
@@ -195,7 +195,7 @@ nav ul li a:hover {
     margin: 15px 0;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
-    color: #212529;
+    color: #2e7d32;
 }
 
 .project-item p {
@@ -212,7 +212,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #212529;
+    background-color: #2e7d32;
     color: #f8f9fa;
     text-align: center;
     padding: 20px 0;
@@ -238,7 +238,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #ffc107;
+    color: #a5d6a7;
 }
 
 /* Responsive Styles */
@@ -312,7 +312,7 @@ footer ul li a:hover {
     margin-bottom: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
-    color: #212529;
+    color: #2e7d32;
 }
 
 #contact-form {
@@ -351,8 +351,8 @@ button.cta-button {
     display: block;
     width: 100%;
     padding: 18px;
-    background-color: #ffc107;
-    color: #212529;
+    background-color: #81c784;
+    color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 1.3em;
@@ -362,7 +362,7 @@ button.cta-button {
 }
 
 button.cta-button:hover {
-    background-color: #e0a800;
+    background-color: #66bb6a;
     transform: translateY(-3px);
 }
 
@@ -379,7 +379,7 @@ button.cta-button:hover {
 
 @media (max-width: 480px) {
     button.cta-button {
-        font-size: 1em;
+        font-size: 1.1em;
         padding: 15px;
     }
 }
