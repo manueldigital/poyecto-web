@@ -147,11 +147,11 @@ nav ul li a:hover {
 
 .about-content p {
     flex: 1;
-    font-size: 25px;
+    font-size: 1.3em;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 30px;
     line-height: 1.6;
+    font-weight: bold;
 }
 
 /* Projects Section */
