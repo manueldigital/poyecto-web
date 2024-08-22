@@ -145,15 +145,15 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+
 .about-content p {
     flex: 1;
     font-size: 1.3em;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    
-
 }
+
 
 /* Projects Section */
 #projects {
