@@ -19,7 +19,7 @@ body {
 header {
     background: #2e7d32; /* Verde oscuro */
     color: #f8f9fa;
-    padding: 10px 0;
+    padding: 1px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -215,7 +215,7 @@ footer {
     background-color: #2e7d32;
     color: #f8f9fa;
     text-align: center;
-    padding: 20px 0;
+    padding: 1px 0;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -303,7 +303,7 @@ footer ul li a:hover {
 
 /* Contact Section */
 #contact {
-    background-color:lightblue;
+    background-color:#B5FFE9;
     padding: 60px 20px;
 }
 
