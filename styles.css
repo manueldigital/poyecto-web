@@ -1,12 +1,11 @@
-
-    /* Global Styles */
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e9ecef;
+    color: #343a40;
 }
 
 .container {
@@ -18,9 +17,9 @@ body {
 
 /* Header */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1px 0;
+    background: #212529;
+    color: #f8f9fa;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,117 +28,157 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f9fa;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
     transition: color 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav ul li a:hover {
-    color: #f0a500;
+    color: #ffc107;
 }
 
 /* Welcome Section */
 .welcome {
     background: url('background-image.jpg') no-repeat center center/cover;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
+    position: relative;
+}
+
+.welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .welcome h2 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    position: relative;
 }
 
 .welcome p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    z-index: 2;
+    position: relative;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 15px 30px;
-    background-color: #f0a500;
-    color: #fff;
+    padding: 18px 35px;
+    background-color: #ffc107;
+    color: #212529;
     text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
+    font-size: 1.3em;
+    border-radius: 50px;
     transition: background-color 0.3s, transform 0.3s;
+    z-index: 2;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cta-button:hover {
-    background-color: #d88c00;
+    background-color: #e0a800;
     transform: translateY(-3px);
 }
 
 /* About Section */
 #about {
     background-color: #fff;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 #about h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #212529;
 }
 
 .about-content {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .profile-img {
-    border-radius: 5%;
-    width: 400px;
-    height: 400px;
+    border-radius: 8%;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 }
 
 .about-content p {
     flex: 1;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
 }
 
 /* Projects Section */
 #projects {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #212529;
 }
 
 .project-grid {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .project-item {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: calc(33.333% - 40px);
     max-width: calc(33.333% - 40px);
     text-align: center;
@@ -148,29 +187,36 @@ nav ul li a:hover {
 
 .project-item img {
     max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .project-item h3 {
-    margin: 10px 0;
+    margin: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #212529;
 }
 
 .project-item p {
-    font-size: 1em;
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #6c757d;
 }
 
 .project-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #212529;
+    color: #f8f9fa;
     text-align: center;
-    padding: 1px 0;
+    padding: 20px 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer ul {
@@ -181,17 +227,18 @@ footer ul {
 
 footer ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 footer ul li a {
-    color: #fff;
+    color: #f8f9fa;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 1.1em;
 }
 
 footer ul li a:hover {
-    color: #f0a500;
+    color: #ffc107;
 }
 
 /* Responsive Styles */
@@ -202,16 +249,16 @@ footer ul li a:hover {
     }
 
     .welcome h2 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .welcome p {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .cta-button {
-        font-size: 1em;
-        padding: 12px 25px;
+        font-size: 1.1em;
+        padding: 15px 30px;
     }
 
     .about-content {
@@ -220,8 +267,8 @@ footer ul li a:hover {
     }
 
     .profile-img {
-        width: 120px;
-        height: 120px;
+        width: 200px;
+        height: 200px;
     }
 
     .project-item {
@@ -232,7 +279,7 @@ footer ul li a:hover {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     nav ul li {
@@ -241,7 +288,7 @@ footer ul li a:hover {
     }
 
     .welcome h2 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .welcome p {
@@ -249,19 +296,23 @@ footer ul li a:hover {
     }
 
     .cta-button {
-        font-size: 0.9em;
-        padding: 10px 20px;
+        font-size: 1em;
+        padding: 12px 25px;
     }
 }
+
 /* Contact Section */
 #contact {
     background-color: #fff;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 #contact h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #212529;
 }
 
 #contact-form {
@@ -270,23 +321,26 @@ footer ul li a:hover {
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    color: #495057;
 }
 
 .form-group textarea {
@@ -296,22 +350,22 @@ footer ul li a:hover {
 button.cta-button {
     display: block;
     width: 100%;
-    padding: 15px;
-    background-color: #f0a500;
-    color: #fff;
+    padding: 18px;
+    background-color: #ffc107;
+    color: #212529;
     border: none;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
 
 button.cta-button:hover {
-    background-color: #d88c00;
+    background-color: #e0a800;
     transform: translateY(-3px);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     #contact-form {
         padding: 0 10px;
@@ -326,63 +380,6 @@ button.cta-button:hover {
 @media (max-width: 480px) {
     button.cta-button {
         font-size: 1em;
-        padding: 12px;
+        padding: 15px;
     }
-}
-/* Welcome Section */
-.welcome {
-    background: url('background-image.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    position: relative;
-}
-
-.welcome::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay for better text contrast */
-    z-index: 1;
-}
-
-.welcome h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds depth to the text */
-    z-index: 2;
-    position: relative;
-}
-
-.welcome p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.4;
-    z-index: 2;
-    position: relative;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #f0a500;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-    z-index: 2;
-    position: relative;
-}
-
-.cta-button:hover {
-    background-color: #d88c00;
-    transform: translateY(-3px);
 }
