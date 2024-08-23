@@ -202,7 +202,7 @@ nav ul li a:hover {
     color: #2e7d32;
 }
 
-.project-item p {
+.project-item p a {
     font-size: 1.1em;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
