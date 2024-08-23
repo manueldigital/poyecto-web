@@ -208,10 +208,10 @@ nav ul li a:hover {
     line-height: 1.6;
     color: #66bb6a;
 }
-.proyect-item p a {
+a {
 text-decoration: none;
 color: #2e7d32;
-font-weight: bold;
+
 }
 .project-item:hover {
     transform: translateY(-5px);
